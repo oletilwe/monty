@@ -9,9 +9,9 @@
 */
 void pint(struct Stack *s)
 {
-	if (top == -1)
+	if (s->top == -1)
 	{
-		fprintf(stderr, "L%d: cant pint, stack empty\n" ,);
+		fprintf(stderr, "L%d: cant pint, stack empty\n");
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", s->items[s->top]);
